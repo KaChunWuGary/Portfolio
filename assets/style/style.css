@@ -1,0 +1,49 @@
+:root{
+    --txt_color1:white;
+    --bg_color1:#99ff66;
+}
+
+
+
+header {
+    display: flex;
+    background-color: var(--bg_color1);
+    padding:1% 2%;
+}
+
+
+nav ul {
+    display:flex;
+    color: blue;
+    margin-right: 20px;
+}
+
+
+nav li {
+    display: flex;
+    color:black;
+    flex-shrink: 0;
+    padding: 1.5%;
+    min-width: max-content;
+    text-decoration: underline;
+}
+
+nav li:hover{
+    font-size: 120%;
+}
+
+#header {
+    flex: 1 1 0;
+}
+
+#img_sec {
+    background-color: aqua;
+}
+
+#mugshot {
+    max-height: 200px;
+    max-width: 200px;
+    display:inline;
+    position:relative;
+    left:43%;
+}
