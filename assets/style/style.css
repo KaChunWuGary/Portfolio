@@ -3,14 +3,22 @@
     --bg_color1:#99ff66;
 }
 
-
-
+h1{
+    font-size:200%;
+}
+/* just thought of it, but if this code needs any changes and I'm unable to figure it out,
+try changed h1 to absolute, and code from there. For now, it works if no further change
+is needed */
 header {
     display: flex;
     background-color: var(--bg_color1);
     padding:1% 2%;
 }
 
+main {
+    padding: 2%;
+    background-color: blueviolet;
+}
 
 nav ul {
     display:flex;
@@ -28,10 +36,18 @@ nav li {
     text-decoration: underline;
 }
 
-nav li:hover{
+nav li:hover {
     font-size: 120%;
+    font-weight: bolder;
 }
 
+.aside_properties {
+    height: 200px;
+}
+
+#aside_aligning{
+    max-width: 25%;
+}
 #header {
     flex: 1 1 0;
 }
@@ -39,11 +55,35 @@ nav li:hover{
 #img_sec {
     background-color: aqua;
 }
+/* this along with aside aligning allows for the split view of work + the 3 other topics 
+Not sure if this is the best way vs position relative, let's give this a try first */
+#main_aligning{
+    display:flex;
+}
 
 #mugshot {
-    max-height: 200px;
-    max-width: 200px;
+    max-width: 180px;
+    height: 210px;
     display:inline;
     position:relative;
     left:43%;
+    padding:10px;
+}
+
+#section_aligning{
+    width:75%;
+}
+
+@media screen and (max-width: 900px) {
+    #mugshot{
+        left:40%;
+    }
+}
+
+@media screen and (max-width ) {
+    
+}
+
+@media screen and (max-width ) {
+    
 }

@@ -23,7 +23,7 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport -->
 <body>
     <header> 
-        <h1 id="header">header text</h1>
+        <h1 id="header">Ka Chun Wu</h1>
             <nav>
                 <ul>
                     <li>About Me</li>
@@ -35,23 +35,27 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
     </header>
     <section id="img_sec"> <img src= "./assets/pictures/Mugshot.jpg" alt="photo of me" id="mugshot">
     </section>
-    <main >
-        <section>
-            <h2>About Me</h2> 
-            <p> About me text goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. wtf
+    <main id="main_aligning">
+        <!-- not sure i need section alighning and aside properties yet but its setup just incase -->
+        <section id="section_aligning">
+            <h2>Work</h2>  
+        </section>
+        <aside id="aside_aligning">
+            <section class="aside_properties">
+                <h2>About Me</h2> 
+                    <p> About me text goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. wtf
                 there's a lot to say random text.
-            </p>
-        </section>
-        <section>
-            <h2>Work</h2>
-            
-        </section>
-        <section>
-            <h2>Contact Me</h2>
-        </section>
-        <section>
-            <h2>Resume</h2>
-        </section>
+                    </p>
+            </section>
+            <section class="aside_properties">
+                <h2>Resume</h2>
+            </section>
+        </aside>
     </main>
+    <footer>
+        <section id="contacts">
+                <h2>Contact Me</h2>
+        </section>
+    </footer>
 </body>
 </html>
