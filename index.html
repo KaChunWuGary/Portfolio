@@ -26,10 +26,11 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
         <h1 id="header">Ka Chun Wu</h1>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Contact Me</li>
-                    <li>Resume</li>
+                    <!-- anchor tags creates the jump point to the part it refers to -->
+                    <li > <a href="#about_jump" alt="Jumps to about me" class="jump_button">About Me</a></li>
+                    <li > <a href="#work_jump" alt="Jumps to work" class="jump_button">Work</a></li>
+                    <li > <a href="#contact_jump" alt="Jumps to contact me" class="jump_button">Contact Me</a></li>
+                    <li > <a href="#resume_jump" alt="Jumps to resume" class="jump_button">Resume</a></li>
                 </ul>
             </nav>
     </header>
@@ -38,7 +39,16 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
     <main id="main_aligning">
         <!-- not sure i need section alighning and aside properties yet but its setup just incase -->
         <section id="section_aligning">
-            <h2>Work</h2>  
+            <h2 id="work_jump">Work</h2>  
+                <p>
+                    <a href = "https://kachunwugary.github.io/Week_1_challenge/" alt="html and css structure organization">
+                        <img src="./assets/pictures/Boss_cat.jpg" alt="Cat for 1st application" id="boss_cat"> 
+                    </a> 
+                    <figcaption>testing</figcaption>
+                </p>
+                <p><img src="" alt="second_application"></p>
+                <p><img src="" alt="third_application"></p> 
+                
         </section>
         <aside id="aside_aligning">
             <section class="aside_properties">
@@ -54,7 +64,8 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
     </main>
     <footer>
         <section id="contacts">
-                <h2>Contact Me</h2>
+            <h2 id="contact_jump">Contact Me</h2>
+                <p id="contact_info">insert random here </p> 
         </section>
     </footer>
 </body>
