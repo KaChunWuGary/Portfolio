@@ -1,6 +1,6 @@
 :root{
     --txt_color1:white;
-    --bg_color1:#99ff66;
+    --bg_color1:#71cc43;
     --bg_colorM:grey;
     --jump_color1:black;
 }
@@ -27,12 +27,11 @@ header {
 
 main {
     padding: 2%;
-    background-color: blueviolet;
+    background-color: var(--bg_colorM);
 }
 
 nav ul {
     display:flex;
-    color: blue;
     margin-right: 20px;
 }
 
@@ -63,6 +62,7 @@ nav li:hover {
     color: var(--jump_color1);
 }
 
+
 #aside_aligning{
     max-width: 25%;
 }
@@ -73,6 +73,7 @@ nav li:hover {
     position:relative;
     left:200px;
 }
+
 /* the contacts selectors only positions the text. Others haven't been done yet */
 #contacts {
     display:flex;
@@ -115,6 +116,7 @@ Not sure if this is the best way vs position relative, let's give this a try fir
     width:75%;
 }
 
+
 /* still need to add responsive layout, just put the aside stuff to the bottom after */
 @media screen and (max-width: 900px) {
     #mugshot{
@@ -134,5 +136,4 @@ Not sure if this is the best way vs position relative, let's give this a try fir
         background: rgb(51,170,52);
     background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 54%, rgba(99,93,99,1) 80%);
     }
-    
 }
