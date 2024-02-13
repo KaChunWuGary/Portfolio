@@ -26,35 +26,41 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
         <h1 id="header">Ka Chun Wu</h1>
             <nav>
                 <ul>
-                    <li>About Me</li>
-                    <li>Work</li>
-                    <li>Contact Me</li>
-                    <li>Resume</li>
+                    <!-- anchor tags creates the jump point to the part it refers to -->
+                    <li > <a href="#about_jump" alt="Jumps to about me" class="jump_button">About Me</a></li>
+                    <li > <a href="#work_jump" alt="Jumps to work" class="jump_button">Work</a></li>
+                    <li > <a href="#contact_jump" alt="Jumps to contact me" class="jump_button">Contact Me</a></li>
+                    <li > <a href="#resume_jump" alt="Jumps to resume" class="jump_button">Resume</a></li>
                 </ul>
             </nav>
     </header>
     <section id="img_sec"> <img src= "./assets/pictures/Mugshot.jpg" alt="photo of me" id="mugshot">
     </section>
     <main id="main_aligning">
-        <!-- not sure i need section alighning and aside properties yet but its setup just incase -->
         <section id="section_aligning">
-            <h2>Work</h2>  
+            <h2 id="work_jump">Work</h2>  
+                <img src="" alt="first_application" 
+                <img src="" alt="second_application"
+                <img src="" alt="third_application
+                "
         </section>
         <aside id="aside_aligning">
             <section class="aside_properties">
-                <h2>About Me</h2> 
+                <h2 id="about_jump">About Me</h2> 
                     <p> About me text goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. wtf
                 there's a lot to say random text.
                     </p>
             </section>
             <section class="aside_properties">
-                <h2>Resume</h2>
+                <h2 id="resume_jump">Resume</h2>
             </section>
         </aside>
     </main>
     <footer>
         <section id="contacts">
-                <h2>Contact Me</h2>
+                <h2 id="contact_jump">Contact Me</h2>
+                    <p id="contact_info">insert random here 
+                    </p>                    
         </section>
     </footer>
 </body>
