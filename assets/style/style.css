@@ -52,19 +52,28 @@ nav li:hover {
     font-weight: bolder;
 }
 
+
 .aside_properties {
     height: 200px;
 }
-
 
 /* this makes it so the jumps doesn't change the color */
 .jump_button:visited{
     color: var(--jump_color1);
 }
 
-#aside_aligning {
+
+#aside_aligning{
     max-width: 25%;
 }
+
+/* changing the photo sizes */
+#boss_cat{
+    max-width:800px;
+    position:relative;
+    left:200px;
+}
+
 /* the contacts selectors only positions the text. Others haven't been done yet */
 #contacts {
     display:flex;
@@ -127,4 +136,4 @@ Not sure if this is the best way vs position relative, let's give this a try fir
         background: rgb(51,170,52);
     background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 54%, rgba(99,93,99,1) 80%);
     }
-}   
+}
