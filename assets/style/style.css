@@ -1,7 +1,8 @@
 :root{
     --txt_color1:white;
-    --bg_color1:#99ff66;
+    --bg_color1:#71cc43;
     --bg_colorM:grey;
+    --bg_colorF:rgb(141, 14, 120);
     --jump_color1:black;
 }
 
@@ -25,14 +26,18 @@ header {
     padding:1% 2%;
 }
 
+footer {
+    padding-bottom: 100px;
+    background-color: var(--bg_colorF) ;
+}
+/* just changed bg color to variable instead of placeholder */
 main {
     padding: 2%;
-    background-color: blueviolet;
+    background-color: var(--bg_colorM);
 }
 
 nav ul {
     display:flex;
-    color: blue;
     margin-right: 20px;
 }
 
@@ -69,16 +74,32 @@ nav li:hover {
 
 /* changing the photo sizes */
 #boss_cat{
-    max-width:800px;
+    max-width:55%;
     position:relative;
-    left:200px;
+    left:20%;
 }
+
+#cat4{
+    position:absolute;
+    max-width:21%;
+    left:35%;
+}
+
+#cat3{
+    max-width:20%;
+    position:relative;
+    left:20%;
+    bottom:20%;
+
+}
+
 /* the contacts selectors only positions the text. Others haven't been done yet */
 #contacts {
     display:flex;
     padding:1%;
     justify-content: center;
 }
+
 #contacts h2 {
     position: absolute;
 }
@@ -86,6 +107,12 @@ nav li:hover {
 #contact_info {
     position: relative;
     top:20px;
+}
+
+#first_app {
+    position:relative;
+    left:45%;
+    bottom:5%;
 }
 
 #header {
