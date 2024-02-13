@@ -1,6 +1,16 @@
 :root{
     --txt_color1:white;
-    --bg_color1:#99ff66;
+    --bg_color1:#71cc43;
+    --bg_colorM:grey;
+    --jump_color1:black;
+}
+
+* {
+    font-family: 'Open Sans', 'Merriweather', 'Montserrat', 'Georgia', sans-serif;
+}
+
+body{
+    min-height: 100vh;
 }
 
 h1{
@@ -17,12 +27,11 @@ header {
 
 main {
     padding: 2%;
-    background-color: blueviolet;
+    background-color: var(--bg_colorM);
 }
 
 nav ul {
     display:flex;
-    color: blue;
     margin-right: 20px;
 }
 
@@ -34,6 +43,8 @@ nav li {
     padding: 1.5%;
     min-width: max-content;
     text-decoration: underline;
+    cursor:pointer;
+    font-size:large;
 }
 
 nav li:hover {
@@ -45,15 +56,37 @@ nav li:hover {
     height: 200px;
 }
 
-#aside_aligning{
+
+/* this makes it so the jumps doesn't change the color */
+.jump_button:visited{
+    color: var(--jump_color1);
+}
+
+#aside_aligning {
     max-width: 25%;
 }
+/* the contacts selectors only positions the text. Others haven't been done yet */
+#contacts {
+    display:flex;
+    padding:1%;
+    justify-content: center;
+}
+#contacts h2 {
+    position: absolute;
+}
+
+#contact_info {
+    position: relative;
+    top:20px;
+}
+
 #header {
     flex: 1 1 0;
 }
 
 #img_sec {
-    background-color: aqua;
+    background: rgb(51,170,52);
+    background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 47%, rgba(99,93,99,1) 80%);
 }
 /* this along with aside aligning allows for the split view of work + the 3 other topics 
 Not sure if this is the best way vs position relative, let's give this a try first */
@@ -74,16 +107,24 @@ Not sure if this is the best way vs position relative, let's give this a try fir
     width:75%;
 }
 
+
+/* still need to add responsive layout, just put the aside stuff to the bottom after */
 @media screen and (max-width: 900px) {
     #mugshot{
         left:40%;
     }
+    #img_sec {
+        background: rgb(51,170,52);
+        background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 50%, rgba(99,93,99,1) 80%);
 }
-
-@media screen and (max-width ) {
-    
 }
-
-@media screen and (max-width ) {
-    
-}
+/* the picture wouldn't stay in the center for some reason, so it's adjusted like this */
+@media screen and (max-width: 650px) {
+    #mugshot{
+        left:35%;
+    }
+    #img_sec {
+        background: rgb(51,170,52);
+    background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 54%, rgba(99,93,99,1) 80%);
+    }
+}   
