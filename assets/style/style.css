@@ -74,24 +74,31 @@ nav li:hover {
 }
 
 /* changing the photo sizes */
-#boss_cat{
+/*#boss_cat{
+    display:flex;
     max-width:55%;
     position:relative;
-    left:20%;
+    left:5%;
+}*/
+#work_anchor1{
+    display:flex;
 }
-
+#boss_cat{
+    max-width:100%;
+}
+/* end testing */
 #cat4{
-    position:absolute;
-    max-width:21%;
-    left:35%;
+    display: flex;
+    flex: 0 0 0;
+    position:relative;
+    max-width: 40%;
 }
 
 #cat3{
-    max-width:20%;
+    display: flex;
+    flex: 0 0 0;
     position:relative;
-    left:20%;
-    bottom:20%;
-
+    max-width:30%;
 }
 
 /* the contacts selectors only positions the text. Others haven't been done yet */
@@ -110,10 +117,17 @@ nav li:hover {
     top:20px;
 }
 
+/* positioning the titles */ 
 #first_app {
-    position:relative;
-    left:45%;
-    bottom:5%;
+    position:absolute;
+
+}
+#second_app {
+    position: absolute;
+
+}
+#third_app {
+    position: absolute;
 }
 
 #header {
@@ -140,7 +154,10 @@ Not sure if this is the best way vs position relative, let's give this a try fir
 }
 
 #section_aligning{
+    display:flex;
+    position:relative;
     width:75%;
+    flex-wrap: wrap;
 }
 
 
@@ -152,11 +169,13 @@ Not sure if this is the best way vs position relative, let's give this a try fir
     #img_sec {
         background: rgb(51,170,52);
         background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 50%, rgba(99,93,99,1) 80%);
-}
+    }
     #main_aligning{
         display:flex;
         flex-direction: column;
-
+    }
+    #section_aligning{
+        width:100%;
     }
 }
 /* the picture wouldn't stay in the center for some reason, so it's adjusted like this */
