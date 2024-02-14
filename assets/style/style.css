@@ -153,6 +153,11 @@ Not sure if this is the best way vs position relative, let's give this a try fir
         background: rgb(51,170,52);
         background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 50%, rgba(99,93,99,1) 80%);
 }
+    #main_aligning{
+        display:flex;
+        flex-direction: column;
+
+    }
 }
 /* the picture wouldn't stay in the center for some reason, so it's adjusted like this */
 @media screen and (max-width: 650px) {
