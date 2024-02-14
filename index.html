@@ -38,36 +38,44 @@ THEN I am presented with a responsive layout that adapts to my viewport -->
     </section>
     <main id="main_aligning">
         <section id="section_aligning">
-            <h2 id="work_jump">Work</h2>  
-                    <!-- hyperlink within an image -->
+            <h2 class="h2_fonts" id="work_jump">Work</h2>  
+                    <!-- hyperlink within an image, also attaching the name of the application --> 
                     <a href = "https://kachunwugary.github.io/Week_1_challenge/" alt="html and css structure organization" >
-                        <img src="./assets/pictures/Boss_cat.jpg" alt="Cat for 1st application" id="boss_cat"> 
+                        <figure id="figure1_settings">
+                            <img src="./assets/pictures/Screenshot_of_website.png" alt="1st application" id="first_application" > 
+                                <figcaption id= "first_app" class="application_text">Code Refactor</figcaption>
+                        </figure>
                     </a>  
-                    <figcaption id= "first_app" class="application_text">Code Refactor</figcaption>
-                    <img src="./assets/pictures/Cat4.jpg" alt="second_application" id="cat4">
-                    <figcaption id= "second_app" class="application_text">Placeholder4</figcaption>
-                    <img src="./assets/pictures/Cat3.jpg" alt="third_application" id="cat3">
-                    <figcaption id= "third_app" class="application_text">Placeholder3</figcaption>
-                    <img src="./assets/pictures/Cat2.jpg" alt="third_application" id="cat2_1">
-                    <figcaption id= "third_app" class="application_text">Placeholder2</figcaption>
-                    <img src="./assets/pictures/Cat1.jpg" alt="third_application" id="cat2_1">
-                    <figcaption id= "third_app" class="application_text">Placeholder1</figcaption>
+                    <!-- just have to do the same with the anchor tags and figure semantics as portfolio builds for things below -->
+                    <figure class="figure2_settings">
+                        <img src="./assets/pictures/Cat4.jpg" alt="second_application" id="cat4">
+                        <img src="./assets/pictures/Cat3.jpg" alt="third_application" id="cat3">
+                        <figcaption id= "app2_title" class="application_text">PlaceholderCURL</figcaption>
+                        <figcaption id= "app3_title" class="application_text">PlaceholderSLEEP</figcaption>
+                    </figure>
+                    <figure class="figure2_settings">
+                        <img src="./assets/pictures/Boss_cat.jpg" alt="third_application" id="cat4">
+                        <img src="./assets/pictures/Cat1.jpg" alt="third_application" id="cat3">
+                        <figcaption id="app4_title" class="application_text">PlaceholderBOSS</figcaption>
+                        <figcaption id= "app5_title" class="application_text">PlaceholderPOSE</figcaption>
+                    </figure>
                 </section>
         <aside id="aside_aligning">
-            <section class="aside_properties">
+            <section class="h2_fonts" class="aside_properties">
                 <h2 id="about_jump">About Me</h2> 
-                    <p> About me text goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. wtf
+                    <p class="aside_fonts"> About me text goes brrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr. wtf
                 there's a lot to say random text.
                     </p>
             </section>
-            <section class="aside_properties">
+            <section class="h2_fonts" class="aside_properties">
                 <h2 id="resume_jump">Resume</h2>
+                <li > <a href="https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707782400&semt=ais" alt="Coming Soon" >Resume</a></li>
             </section>
         </aside>
     </main>
     <footer>
         <section id="contacts">
-            <h2 id="contact_jump">Contact Me</h2>
+            <h2 class="h2_fonts" id="contact_jump">Contact Me</h2>
                 <p id="contact_info">insert random here </p> 
         </section>
     </footer>
