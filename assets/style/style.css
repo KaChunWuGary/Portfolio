@@ -80,27 +80,39 @@ nav li:hover {
     position:relative;
     left:5%;
 }*/
-#work_anchor1{
-    display:flex;
-}
+
 #boss_cat{
-    max-width:100%;
+    margin:1%;
+    max-width: 100%;
+    padding:2%;
 }
 /* end testing */
 #cat4{
     display: flex;
-    flex: 0 0 0;
     position:relative;
-    max-width: 40%;
+    max-width: 56%;
+    margin:1%;
+    margin-left: 6%;
+    flex: 0 0 40%;
 }
 
 #cat3{
     display: flex;
-    flex: 0 0 0;
     position:relative;
     max-width:30%;
+    margin:1%;
+    margin-left: 1.5%;
+    flex: 0 0 40%;
 }
 
+#cat2_1{
+    display:flex;
+    position:relative;
+    margin:2%;
+    margin-left: 6%;
+    flex: 0 0 40%;
+    max-width:40%;
+}
 /* the contacts selectors only positions the text. Others haven't been done yet */
 #contacts {
     display:flex;
