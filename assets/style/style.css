@@ -86,7 +86,7 @@ nav li:hover {
 
 /* this makes it so the link before and after jumping stays consistent to the color I want */
 .jump_button:link{
-    color: (var(--jump_color1));
+    color: var(--jump_color1);
 }
 .jump_button:visited{
     color: var(--jump_color1);
