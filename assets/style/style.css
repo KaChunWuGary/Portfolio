@@ -1,9 +1,10 @@
 :root{
-    --txt_color1:white;
-    --bg_color1:#71cc43;
-    --bg_colorM:grey;
-    --bg_colorF:rgb(141, 14, 120);
-    --jump_color1:black;
+    --bg_colorM:rgb(59, 59, 59);
+    --jump_color1:rgb(81, 158, 18);
+    --h2_color:#7575808a; 
+    --font_color:#babaccb2;
+    --p_font_size:120%;
+    --border_color:#757580cc;
 }
 
 * {
@@ -12,25 +13,36 @@
 
 body{
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 h1{
     font-size:200%;
+    color:var(--jump_color1);
 }
-/* just thought of it, but if this code needs any changes and I'm unable to figure it out,
-try changed h1 to absolute, and code from there. For now, it works if no further change
-is needed */
+
+h2{
+    color:var(--h2_color); 
+    font-size:450%;
+}
+
+
 header {
     display: flex;
-    background-color: var(--bg_color1);
+    background-color: var(--bg_colorM);
     padding:1% 2%;
 }
 
 footer {
+    width:100%;
     padding-bottom: 100px;
-    background-color: var(--bg_colorF) ;
+    background-color: var(--bg_colorM) ;
+    flex-shrink: 0;
+    border:2em solid var(--jump_color1);
+
 }
-/* just changed bg color to variable instead of placeholder */
+
 main {
     padding: 2%;
     background-color: var(--bg_colorM);
@@ -47,7 +59,6 @@ nav li {
     color:black;
     flex-shrink: 0;
     padding: 1.5%;
-    min-width: max-content;
     text-decoration: underline;
     cursor:pointer;
     font-size:large;
@@ -58,76 +69,129 @@ nav li:hover {
     font-weight: bolder;
 }
 
-
-.aside_properties {
-    height: 200px;
+.aside_fonts{
+    color: var(--font_color);
+    font-size:var(--p_font_size);
 }
 
-/* this makes it so the jumps doesn't change the color */
+.aside_properties {
+    height: 100%;
+    display:flex;
+    flex:1 0 25%;
+}
+
+.figure2_settings{
+    display:flex;
+}
+
+/* this makes it so the link before and after jumping stays consistent to the color I want */
+.jump_button:link{
+    color: var(--jump_color1);
+}
 .jump_button:visited{
     color: var(--jump_color1);
 }
+/* this makes it so the link before and after jumping stays consistent to the color I want */
 
+/* positions the title */
+#app2_title, #app3_title, #app4_title, #app5_title {
+    position:relative;
+
+    text-align: center;
+    border:solid;
+    color:aliceblue;
+    flex-shrink: 0;
+    top:1.5%;
+}
+
+#app2_title, #app4_title {
+    left:-90%;
+    width:56.5%;
+}
+
+
+#app5_title, #app3_title{
+    width:30%;
+    left:-87.5%;
+}
+
+#app2_title, #app3_title{
+    height:10%;
+}
+
+#app4_title, #app5_title{
+    height: 8%;
+}
+/* positions the title */
 
 #aside_aligning{
     max-width: 25%;
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding:1%; 
 }
 
-/* changing the photo sizes */
-/*#boss_cat{
-    display:flex;
-    max-width:55%;
-    position:relative;
-    left:5%;
-}*/
-#work_anchor1{
-    display:flex;
-}
-#boss_cat{
-    max-width:100%;
-}
-/* end testing */
+
 #cat4{
     display: flex;
-    flex: 0 0 0;
     position:relative;
-    max-width: 40%;
+    max-width: 56%;
+    margin:1%;
+    margin-left: 6%;
+    
 }
 
 #cat3{
     display: flex;
-    flex: 0 0 0;
     position:relative;
     max-width:30%;
+    margin:1%;
+    margin-left: 1.5%;
+    
 }
 
 /* the contacts selectors only positions the text. Others haven't been done yet */
 #contacts {
-    display:flex;
+    display:inline-block;
+    position:relative;
     padding:1%;
-    justify-content: center;
 }
+
 
 #contacts h2 {
-    position: absolute;
-}
-
-#contact_info {
+    display:flex;
     position: relative;
-    top:20px;
 }
 
-/* positioning the titles */ 
+
+
+#figure1_settings {
+    height:100%;
+}
+
+/* changing the photo sizes */
+
+#first_application{
+    margin:1%;
+    max-width: 100%;
+    padding:2%;
+    
+}
+/* positioning the big title */ 
 #first_app {
-    position:absolute;
-
-}
-#second_app {
-    position: absolute;
-
-}
-#third_app {
-    position: absolute;
+    display:flex;
+    position: relative;
+    width:96%;
+    height:93%;
+    justify-content: center;
+    border:solid;
+    color:aliceblue;
+    backdrop-filter: blur(5px);
+    top:-96%;
+    left:3%;
+    
 }
 
 #header {
@@ -135,8 +199,8 @@ nav li:hover {
 }
 
 #img_sec {
-    background: rgb(51,170,52);
-    background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 47%, rgba(99,93,99,1) 80%);
+    background: rgb(88,87,87);
+    background: linear-gradient(90deg, rgba(88,87,87,1) 8%, rgba(120,40,108,1) 47%, rgba(88,87,87,1) 80%);
 }
 /* this along with aside aligning allows for the split view of work + the 3 other topics 
 Not sure if this is the best way vs position relative, let's give this a try first */
@@ -150,32 +214,41 @@ Not sure if this is the best way vs position relative, let's give this a try fir
     display:inline;
     position:relative;
     left:43%;
-    padding:10px;
+    padding:10px; 
 }
 
-#section_aligning{
+#resume_link{
+    text-decoration: unset;
+    color: var(--font_color);
+    font-size:var(--p_font_size);
+}
+
+#work_aligning{
     display:flex;
     position:relative;
     width:75%;
     flex-wrap: wrap;
+    border:2px dashed var(--jump_color1);
 }
 
 
-/* still need to add responsive layout, just put the aside stuff to the bottom after */
 @media screen and (max-width: 900px) {
     #mugshot{
         left:40%;
     }
     #img_sec {
-        background: rgb(51,170,52);
-        background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 50%, rgba(99,93,99,1) 80%);
+        background: rgb(88,87,87);
+        background: linear-gradient(90deg, rgba(88,87,87,1) 8%, rgba(120,40,108,1) 50%, rgba(88,87,87,1) 80%);
     }
     #main_aligning{
         display:flex;
         flex-direction: column;
     }
-    #section_aligning{
+    #work_aligning{
         width:100%;
+    }
+    #aside_aligning{
+        max-width: 100%;
     }
 }
 /* the picture wouldn't stay in the center for some reason, so it's adjusted like this */
@@ -183,8 +256,9 @@ Not sure if this is the best way vs position relative, let's give this a try fir
     #mugshot{
         left:35%;
     }
+    
     #img_sec {
-        background: rgb(51,170,52);
-    background: linear-gradient(90deg, rgba(51,170,52,1) 8%, rgba(120,40,108,1) 54%, rgba(99,93,99,1) 80%);
+        background: rgb(88,87,87);
+        background: linear-gradient(90deg, rgba(88,87,87,1) 8%, rgba(120,40,108,1) 54%, rgba(88,87,87,1) 80%);
     }
 }
