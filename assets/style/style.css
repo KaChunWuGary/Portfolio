@@ -28,9 +28,6 @@ h2{
 }
 
 
-/* just thought of it, but if this code needs any changes and I'm unable to figure it out,
-try changed h1 to absolute, and code from there. For now, it works if no further change
-is needed */
 header {
     display: flex;
     background-color: var(--bg_colorM);
@@ -79,10 +76,8 @@ nav li:hover {
 
 .aside_properties {
     height: 100%;
-    
     display:flex;
     flex:1 0 25%;
-
 }
 
 .figure2_settings{
@@ -96,6 +91,7 @@ nav li:hover {
 .jump_button:visited{
     color: var(--jump_color1);
 }
+/* this makes it so the link before and after jumping stays consistent to the color I want */
 
 /* positions the title */
 #app2_title, #app3_title, #app4_title, #app5_title {
@@ -126,6 +122,7 @@ nav li:hover {
 #app4_title, #app5_title{
     height: 8%;
 }
+/* positions the title */
 
 #aside_aligning{
     max-width: 25%;
