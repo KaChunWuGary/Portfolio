@@ -30,7 +30,7 @@ THEN I am presented with a responsive layout that adapts to my viewport <br>
 [Link to Porfolio](https://kachunwugary.github.io/Portfolio/)
 
 ## Screenshot
-![Top of website](./assets/pictures/1st_Screenshot.png)
+![Top of website](./assets/pictures/Screenshot_of_react_refactor.png)
 ![Bottom of website](./assets/pictures/2nd_Screenshot.png)
 
 
