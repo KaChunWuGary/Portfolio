@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+  flex: 1;
+  padding: 10px;
+}
+
+.background{
+  background-color: lightskyblue;
+}

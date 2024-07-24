@@ -1,0 +1,20 @@
+.form_margins{
+  margin:5%
+}
+
+.contact_me{
+  font-size:xx-large;
+  color:aquamarine;
+}
+
+.form_word{
+  color:rgb(21, 252, 0);
+  font-size:large;
+}
+
+.custom_button {
+  background-color: rgb(21, 252, 0) !important;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

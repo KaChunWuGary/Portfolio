@@ -1,0 +1,26 @@
+.front_end_title{
+  color:rgb(21, 252, 0);
+  font-size:xx-large;
+  font-weight:bold;
+}
+.front_end_text{
+  color:cyan;
+  font-weight:bold;
+  font-size:large !important;
+}
+.back_end_title{
+  color:rgb(21, 252, 0);
+  font-size:xx-large;
+  font-weight:bold;
+}
+.back_end_text{
+  color:rgb(255, 0, 242);
+  font-weight:bold;
+  font-size:large !important;
+}
+a {
+  font-size:xx-large;
+  font-weight:bold;
+  text-decoration: none  !important; 
+  
+}
