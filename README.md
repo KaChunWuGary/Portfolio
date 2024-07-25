@@ -39,7 +39,7 @@ none
           
 Username:KaChunWuGary
           
-[Link to Github](https://github.com/KaChunWuGary)
+[Link to Portfolio](https://helpful-mousse-14ac8a.netlify.app/)
           
 If you have any questions, please email garykachunwu@gmail.com
           
