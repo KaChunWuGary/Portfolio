@@ -18,11 +18,17 @@ function Contact() {
 
     setInputValue(value);
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+  };
+
   return (
     <main>
       <section className="form_margins">
         <h1 className="contact_me">CONTACT ME</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="Name" className="form-label form_word">Name</label>
             <input type="text" className="form-control" id="Name" aria-describedby="Name"/>
@@ -44,7 +50,7 @@ function Contact() {
             <label htmlFor="Message" className='form_word'>Message:</label>
             <textarea className="form-control" id="Message" rows="7" aria-describedby="Message"></textarea>
           </div>
-          <button type="submit" className="btn custom_button" onclick="return false">Submit</button>
+          <button type="submit" className="btn custom_button">Submit</button>
         </form>
       </section>
     </main>
