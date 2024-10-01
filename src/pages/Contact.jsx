@@ -21,7 +21,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+    document.getElementsByClassName('Confirmation').removeAttribute('hidden');
   };
 
   return (
@@ -51,7 +51,7 @@ function Contact() {
             <textarea className="form-control" id="Message" rows="7" aria-describedby="Message"></textarea>
           </div>
           <button type="submit" className="btn custom_button">Submit</button>
-          <div className="mb-3 hidden">
+          <div className="mb-3 Confirmation" hidden>
             <label htmlFor="Confirmation Message" className= "form_word">Contact Form Submitted!</label>
           </div>
         </form>
