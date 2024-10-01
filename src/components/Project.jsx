@@ -44,20 +44,20 @@ function Project() {
               <img src={githubmark} alt = "github link" className ="icons" ></img>
             </a>
           </figcaption>
-          <figcaption className="figcaption">
+          {/* <figcaption className="figcaption">
             Project 4
             <a href="https://github.com/KaChunWuGary" target="_blank" rel="noopener noreferrer">
               <img src={githubmark} alt = "github link" className ="icons" ></img>
             </a>
-          </figcaption>
+          </figcaption> */}
         </div>
         <div className="col col-12 row-cols-2 d-flex">       
           <a  href="https://boiling-bastion-87037-4394261bcf08.herokuapp.com/" alt="e_commerce_site_vers2_with_react"  target="_blank" rel="noopener noreferrer" >
             <img className = 'col ss_resize' src={e_commerce_react_vers2}></img>
           </a>
-          <a  href="https://boiling-bastion-87037-4394261bcf08.herokuapp.com/" alt="e_commerce_site_vers2_with_react"  target="_blank" rel="noopener noreferrer" >
+          {/* <a  href="https://boiling-bastion-87037-4394261bcf08.herokuapp.com/" alt="e_commerce_site_vers2_with_react"  target="_blank" rel="noopener noreferrer" >
             <img className = 'col ss_resize' src={e_commerce_react_vers2}></img>
-          </a>
+          </a> */}
         </div>
         {/* <div className="col col-12 row-cols-2 d-flex">         
           <figcaption className="figcaption">project 5</figcaption>
