@@ -21,7 +21,7 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    document.querySelector('label[htmlFor="Confirmation Message"]').classList.remove('hidden');
+    
   };
 
   return (
@@ -51,8 +51,8 @@ function Contact() {
             <textarea className="form-control" id="Message" rows="7" aria-describedby="Message"></textarea>
           </div>
           <button type="submit" className="btn custom_button">Submit</button>
-          <div className="mb-3">
-            <label htmlFor="Confirmation Message" className= "form_word hidden">Contact Form Submitted!</label>
+          <div className="mb-3 hidden">
+            <label htmlFor="Confirmation Message" className= "form_word">Contact Form Submitted!</label>
           </div>
         </form>
       </section>
